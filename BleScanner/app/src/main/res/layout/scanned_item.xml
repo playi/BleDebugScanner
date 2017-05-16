@@ -5,7 +5,7 @@
               android:layout_height="match_parent">
     <TextView
         android:id="@+id/scanned_item_name"
-        android:textSize="64sp"
+        android:textSize="32sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 

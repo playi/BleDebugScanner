@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/BleScanner.iml" filepath="$PROJECT_DIR$/BleScanner.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$USER_HOME$/gitbox/playi/steve_sandbox/BleScanner/BleScanner.iml" filepath="$USER_HOME$/gitbox/playi/steve_sandbox/BleScanner/BleScanner.iml" />
+      <module fileurl="file://$USER_HOME$/gitbox/playi/steve_sandbox/BleScanner/app/app.iml" filepath="$USER_HOME$/gitbox/playi/steve_sandbox/BleScanner/app/app.iml" />
     </modules>
   </component>
 </project>

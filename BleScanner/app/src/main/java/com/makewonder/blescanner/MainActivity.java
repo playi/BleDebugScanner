@@ -60,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
 
     private GattCallback mGattCallback;
     private BluetoothGatt mGatt;
+    private boolean mTriedToConnect = false;
 
 
     @Override
@@ -112,9 +113,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void Connect(BluetoothDevice device) {
-        Toast.makeText(this, "Attempting connection to " + device.getName(), Toast.LENGTH_SHORT).show();
-        Log.d(TAG,"Attempting connection to " + device.getName());
-        mGatt = device.connectGatt(this, false, mGattCallback);
+        if (mTriedToConnect) {
+            Toast.makeText(this, "Already tried to connect to a device.  Kill app and try again", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(this, "Attempting connection to " + device.getName(), Toast.LENGTH_SHORT).show();
+            Log.d(TAG,"Attempting connection to " + device.getName());
+            mGatt = device.connectGatt(this, false, mGattCallback);
+        }
     }
 
     private ScanCallback mScanCallback = new ScanCallback() {
