@@ -59,7 +59,6 @@ public class BleConnection extends BluetoothGattCallback {
     public void disconnect() {
         mState = State.DISCONNECTING;
         mGatt.disconnect();
-        mGatt.close();
         mContext.updateConnectionsList();
         Toast.makeText(mContext, "Disconnecting from  " + mDeviceDescription
                 + ".  Tap again to remove from list",
@@ -94,6 +93,7 @@ public class BleConnection extends BluetoothGattCallback {
             mConnectedCount += 1;
         } else {
             mDisconnectedCount += 1;
+            mGatt.close();
         }
 
         switch (mState) {
