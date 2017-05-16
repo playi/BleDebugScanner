@@ -1,0 +1,30 @@
+Chrome Version: Google Chrome 57.0.2987.146
+Chrome OS Version: Platform 9202.64.0
+Chrome OS Platform: Asus Chrombook Flip C100PA
+Network info: WIFI Encrypted
+
+Please specify Cr-* of the system to which this bug/feature applies (add
+the label below).
+
+Steps To Reproduce:
+(1)
+(2)
+(3)
+
+Expected Result:
+
+Actual Result:
+
+How frequently does this problem reproduce? (Always, sometimes, hard to
+reproduce?)
+
+What is the impact to the user, and is there a workaround? If so, what is
+it?
+
+Please provide any additional information below. Attach a screen shot or
+log if possible.
+
+For graphics-related bugs, please copy/paste the contents of the about:gpu
+page at the end of this report.
+
+
